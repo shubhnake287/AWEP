@@ -1,0 +1,181 @@
+Day 1 Assignment:- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- Internal Style -->ś
+    <style>
+/** ID Selector :: overrding :: */
+    ol.List{
+      list-style-type: upper-roman;
+      background :powderblue;
+
+    }
+    #abc.list{
+        color: green;
+        list-style-type: none; 
+        
+    }
+    
+/* Element Selector :: All the elments mentioind */
+
+    h1,h2,h3,h4,h6 p{
+        color:Red
+    }
+    /* Class Selector :: */
+    .myclass {
+        color:peru;
+      }
+    </style>
+  
+</head>
+<body>
+  <div>
+      <img src="https://picsum.photos/500/500" >
+  </div>
+ <!-- HTML Syntax and Basic Tags, Typograhpy, Linking a  nd Media Elments-->
+    Welcome to CDAC
+    <p id="abc" name="mumbai" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor nemo nulla alias recusandae dolorem ut officiis
+        nesciunt voluptatum et fugiat, placeat pariatur doloremque perspiciatis animi non, natus ex libero?
+      </p>
+
+      <h1 class="myclass">Hello Students</h1>
+      <h2 class="myclass" style="";background:green>Hello </h2>
+      <h3 class="myclass">Hello </h3>
+      <h4>Hello Universe</h4>
+      <h6>Hello India</h6>
+
+      <ol id="abc" name="mylist" style="" class="List">
+        <li>Iphone</li>
+        <li>MI</li>
+        <li>Samsung </li>
+      </ol>
+  
+<!-- Linking Element -->
+      <a href="p2.html">Go To Second Page</a>
+    </body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!---Assignmet CSS Flexbox - Move Text element across the division area-->
+<body>
+    <div style="background:tomato; height: 100vh; display: flex; justify-content: center; align-items:flex-start;">
+      <h1>Wel-Come to CDAC</h1>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--CSS Flexbox - Move Image element across the division area-->
+<body>
+    <div style="background:purple; height: 100vh; display: flex; justify-content: center; align-items: center;">
+      <img src="https://picsum.photos/500/500">
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+    </style>
+</head>
+<!--CSS Flexbox - Muliple blocks and move elment within each block-->
+<body>
+    <div>
+        <div
+          style="
+            background:greenyellow;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+          "
+        >
+          <img src="https://picsum.photos/00/700" ; width="200px" ;alt="" />
+        </div>
+  
+        <div
+          style="
+            background: green;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 32px;
+          "
+        >
+          <img src="https://picsum.photos/201/200" ;width="200px";alt="" />
+        </div>
+    </div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        background-color: red;
+        ">
+        <div style="background:orange;flex:1;">
+
+        </div>
+        <div style="background:white;flex:1;text-align: center;padding-top:15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Spinning_Ashoka_Chakra.gif" width="200rem" ;
+                height="200rem" ; />
+        </div>
+        <div style="background:Green;flex:1">
+
+        </div>
+    </div>
+</body>
+
+</html>
+----------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,253 @@
+Day4 Assignment
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .beautify {
+
+            border: 5px solid black;
+        }
+
+        #id1 {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+    </style>
+    <script src="p1.js"></script>
+</head>
+
+<body>
+    <div id="id1" class="myclass">
+        <div id="id2" class="beautify" onmouseover="hoverme()" onmouseout="hoverout()">
+            Hello World
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--CS FILE-->
+
+function hoverme() {
+    var id2Ele = document.querySelector(".beautify");
+    id2Ele.style.color = "purple";
+}
+
+function hoverout() {
+    var id2Ele = document.querySelector(".beautify");
+    id2Ele.style.color = "pink";
+}
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass {
+            background: green;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .beautify {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            border: 5px solid black;
+            padding: 20px;
+
+        }
+    </style>
+    <script src="p2.js"></script>
+</head>
+
+<body>
+    <div class="myclass">
+        <div class="beautify" onmouseover="hoverme2()" onmouseout="hoverme1()">
+            Hello World
+        </div>
+    </div>
+</body>
+
+</html>
+<!--CSS FILE-->
+
+
+function hoverme2() {
+    document.querySelector('html').children[1].children[0].children[0].style.background = "red";
+
+
+}
+
+function hoverme1() {
+    let temp = document.querySelector('html').children[1].children[0].children[0].style.background = "orange";
+
+}
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="p3.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+        }
+
+        .back {
+            background: black;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+
+            font-size: 40px;
+            border: 2px solid white;
+        }
+
+        .like-comment {
+            border: 20px solid white;
+
+        }
+
+        #btnid {
+            font-size: 40px;
+
+        }
+
+        #btncmt {
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        #commentBox {
+            border: 2px solid white;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div>Hello</div>
+        <div>
+            <div class="like-comment">
+                <button id="btnid" onclick="likebutton()">
+                    Like 1</button>
+                <button id="btncmt" onclick="commentbutton()">Comment</button>
+            </div>
+        </div>
+
+        <!-- Will Contain all the comment-->
+        <div id="commentBox"></div>
+    </div>
+</body>
+
+</html>
+<!--CSS FILE-->
+var commentcounter = 1;
+var likecounter = 1;
+
+function commentbutton() {
+    //create new element
+    const newelement = document.createElement("div");
+    newelement.textContent = "User Comment" + commentcounter;
+
+    //stylin to new element
+    newelement.style.background = "blue";
+    newelement.style.color = "white";
+    newelement.style.marginTop = "5px";
+    //Comment box Element
+    const commentBox = document.querySelector('#commentBox');
+    //append the new element to parent
+    commentBox.appendChild(newelement);
+
+    commentcounter++;
+}
+
+function likebutton() {
+    likecounter++;
+
+    let btnelement = document.querySelector('#btnid');
+
+    btnelement.innerHTML = "Like" + likecounter;
+
+}
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back {
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            border: 2px double red;
+            font-family: Arial;
+            padding: 51px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    </style>
+    <script src="p4.js"></script>
+</head>
+
+<body>
+    <div class="back">
+
+        <div class="text" onmouseenter="hoverme()" onmouseleave="hovermeout()">Hello</div>
+
+    </div>
+</body>
+
+</html>
+<!--CSS FILE-->
+
+function hoverme() {
+    let temp = document.querySelector('.text');
+
+    temp.style.background = "pink";
+
+    temp.innerHTML = "Wel-Come";
+}
+
+function hovermeout() {
+    let temp = document.querySelector('.text');
+
+    temp.style.background = "gray";
+    temp.style.color = "white";
+    temp.innerHTML = "Hello";
+}

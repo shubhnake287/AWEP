@@ -1,0 +1,114 @@
+Day6 Assignment
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=p4.js></script>
+    <style>
+        .main-cont {
+            background: yellow;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 30px
+        }
+
+        .sub1 {
+            border: 2px solid black;
+            height: 80vh;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-cont {
+            padding: 10px;
+            background: red;
+            height: 70vh;
+            width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-cont">
+        <div class="sub1">
+            <div>
+                Hello Please comment below
+            </div>
+            <div class="sub-cont">
+                <div>
+                    <input id="inputid1" type="text" name="" placeholder="Enter comment here">
+                </div>
+                <div>
+                    <button id="id2" onclick="likehere()">Like 1</button>
+                    <button onclick="commenthere()">Comment</button>
+                </div>
+                <div id="commentbox">
+                    <div id="refcmtid" style="display: flex;justify-content:space-between;visibility: hidden;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <div> Sample data</div>
+                            <button onclick="deletecomments(this)">Delete</button>
+                        </div>
+                        <!--<button onclick="this.parentElement.remove()">Delete</button>   idealy don't use this-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<!--CSS FILE-->
+
+var likecounter = 1;
+var commentcounter = 1;
+
+function likehere() {
+    likecounter++;
+
+    let newElement = document.querySelector('#id2');
+    newElement.innerHTML = "Like" + likecounter;
+}
+
+function commenthere() {
+    let usercomment = document.querySelector('#inputid1').value;
+
+    // creating clone 
+    const newElement = document.querySelector("#refcmtid").cloneNode(true);
+    newElement.removeAttribute("id");
+    newElement.style.visibility = "visible";
+
+    newElement.children[0].children[0].innerHTML = usercomment;
+
+
+    //backgroundstyling
+    newElement.style.background = "Skyblue";
+    newElement.style.margin = "5px";
+    //commentbox element
+    const commentbox = document.querySelector("#commentbox");
+
+
+    //element add
+    commentbox.appendChild(newElement);
+    //commentcounter++;
+    //commentbox.insertBefore(newElement, commentbox.firstChild);
+    commentcounter++;
+    document.querySelector('#inputid1').value = "";
+}
+function deletecomments(currentelement) {
+    //alert("deleted alert");
+    currentelement.parentElement.parentElement.remove();
+}
+

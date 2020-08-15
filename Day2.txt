@@ -1,0 +1,501 @@
+Day2 Assignment
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--HTML & CSS Integration - Inline Styling-->
+<body>
+    <div style="background: royalblue;
+     margin-bottom: 16px; 
+     padding: 12px;
+     font-family: Arial;
+     text-align: center;
+     font-size:25px;
+     font-weight:bold;
+     border-radius: 15px;">
+      Object oriented programming
+    </div>
+    <div style="background: royalblue; 
+    margin-bottom: 16px; 
+    padding: 12px;
+    font-family: cursive;
+    text-align:left;
+    font-size:25px;
+    font-weight:bold;
+    border-radius: 10px;">
+      AWS
+    </div>
+    <div style="background: royalblue; 
+    padding: 12px;
+    margin-bottom: 16px; 
+    font-family: serif;
+    text-align: right;
+    font-size:25px;
+    font-weight:bold;
+    border-radius: 20px;">
+      Data Structure    
+    </div>
+    <div style="background: royalblue; 
+    padding: 12px;
+    font-family: Georgia;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    border-radius:800px">
+      Python    
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Internal Stayling-->
+    <style>
+        .internalstyle{
+            background: royalblue;
+            margin-bottom: 16px; 
+            padding: 12px;
+            font-family: Arial;
+            text-align: center;
+            font-size:25px;
+            font-weight:bold;
+            border-radius: 15px;
+        }
+        .internal1{
+            background: royalblue; 
+            margin-bottom: 16px; 
+            padding: 12px;
+            font-family: cursive;
+            text-align:left;
+            font-size:25px;
+            font-weight:bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="internalstyle">
+      Object oriented programming
+    </div>
+    <div class="internal1">
+      AWS
+    </div>
+    <div class="internalstyle">
+      Data Structure    
+    </div>
+    <div class="internal1">
+      Python    
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--External Styling-->
+    <link rel="stylesheet" href="p7.css" />
+</head>
+
+<body>
+    <div class="Externalstyle">
+        Wel-come to CDAC
+    </div>
+    <div class="Externalstyle1">
+        Welcome to Mumbai
+    </div>
+</body>
+
+</html>
+
+<!--CSS FILE-->
+
+.Externalstyle{
+  background: royalblue;
+  margin-bottom: 16px; 
+  padding: 12px;
+  font-family: Arial;
+  text-align: center;
+  font-size:25px;
+  font-weight:bold;
+  border-radius: 15px;
+}
+.Externalstyle1{
+  background: royalblue; 
+  margin-bottom: 16px; 
+  padding: 12px;
+  font-family: cursive;
+  text-align:left;
+  font-size:25px;
+  font-weight:bold;
+  border-radius: 10px;
+}
+
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Presentation Inside Body Block :: Text Styling with CSS -->
+<body>
+    <div style="background: royalblue;
+     margin-bottom: 16px; 
+     padding: 12px;
+     font-family: Arial;
+     text-align: center;
+     font-size:25px;
+     font-weight:bold; ">
+      Object oriented programming
+    </div>
+    <div style="background: royalblue; 
+    margin-bottom: 16px; 
+    padding: 12px;
+    font-family: cursive;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;">
+      AWS
+    </div>
+    <div style="background: royalblue; 
+    padding: 12px;
+    margin-bottom: 16px; 
+    font-family: serif;
+    text-align: center;
+    font-size:25px;
+    font-weight:bold;">
+      Data Structure    
+    </div>
+    <div style="background: royalblue; 
+    padding: 12px;
+    font-family: Georgia;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;">
+      Python    
+    </div>
+  </body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Margine Padding Using CSS-->
+
+<body>
+    <div style="
+
+    background:rgba(600,300,3,0.5);
+    border-bottom:5px dotted red;
+    border-top:5px dotted red; 
+    color:red;
+
+    font-size:80px; 
+    text-align:center;
+    font-weight:bold;
+    
+    padding: 5px;  
+    margin-bottom: 10px;">
+        Checking color code</div>
+
+    <div style="
+    background:rgba(600,300,20,1); 
+    border: 5px solid rgb(10, 10, 200); 
+    border-radius:60px;
+    color:greenyellow; 
+
+    font-size: 10em;
+    font-style: oblique;
+    font-weight: 900;
+
+    margin:50px;
+    padding-bottom: 5px;">
+        Checking another</div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Flexbox Fundamental-->
+    <style>
+        html,
+        body{
+            margin:0px;
+        }
+        .homebar{
+            margin:5px;
+            padding:5px;
+            background:rgb(209, 219, 210); 
+            border-radius: 10px; 
+            font-family:Lucida Bright;
+        }
+    </style>
+</head>
+<body style="background:rgb(14, 11, 17); ">
+    <div style="
+        background: rgb(191, 205, 214,0.8);
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        height:90px;">
+
+        <div style="
+        background: rgb(191, 205, 214,0.2);
+        font-size:40px;
+        border-radius: 30px;
+        margin:10px;
+        font-family:Lucida Bright">
+            <i><ins>Madira.com</ins></i>
+        </div> 
+        <div style="
+        background:rgb(191, 205, 214,0.2);
+        display:flex;
+        align-items:center;
+        margin:5px;
+        font-size:25px;
+        height:50px;
+        padding:5px;
+        border-radius: 10px;
+        ">
+            <div class="homebar">shops</div>
+            <div class="homebar">Location</div>
+            <div class="homebar">AboutUs</div>
+            <div class="homebar">ContactUs</div>
+            <div class="homebar">Signin</div>
+        </div>
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 10px;;
+        }
+    </style>
+</head>
+<!--Divide the screen window using FlexBox-->
+<body>
+    <div style="height:50vh;display: flex; ">
+        <div style="
+            background:mediumslateblue;
+            flex:1;
+            font-size:64px;
+            display: flex;
+            justify-content:center;
+            align-items: center;">
+            Block 1
+            <img src="https://picsum.photos/id/237/200/300" alt="Block 1"; width=200px;/>
+        </div>
+        <div style="
+            background: mediumpurple;
+            flex:1;
+            font-size:64px;
+            display: flex;
+            justify-content:center;
+            align-items: center;">
+            Block 2
+            <img src="https://picsum.photos/id/239/200/300" alt="Block 2";/>
+        </div>
+    </div>
+    <div style="height:50vh ;display:flex;">
+        <div style="
+            background:mediumaquamarine;
+            flex:1;
+            font-size:64px;
+            display: flex;
+            justify-content:center;
+            align-items: center;">
+            Block 3
+            <img src="https://picsum.photos/id/242/200/300" alt=Block 3 ;/>
+        </div>
+        <div style="
+            background:maroon;
+            flex:1;
+            font-size:64px;
+            display: flex;
+            justify-content:center;
+            align-items: center;">
+            Block 4
+            <img src="https://picsum.photos/id/244/200/300" alt="Block 4" />
+        </div>
+    </div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+<!--CHESS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }*/
+
+        .container {
+            border: 10px solid black;
+            /*(margin: 10px;*/
+        }
+
+        .line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .black {
+            background: black;
+            color: white;
+            font-size: 60px;
+            flex: 1;
+            height: 11.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .white {
+            background: white;
+            color: black;
+            font-size: 60px;
+            height: 11.5vh;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Row 1-->
+        <div class="line">
+            <div class="black">&#9820;</div>
+            <div class="white">&#9822;</div>
+            <div class="black">&#9821;</div>
+            <div class="white">&#9819;</div>
+            <div class="black">&#9818;</div>
+            <div class="white">&#9821;</div>
+            <div class="black">&#9822;</div>
+            <div class="white">&#9820;</div>
+        </div>
+        <!--Row 2-->
+        <div class="line">
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+        </div>
+        <!--Row 3-->
+        <div class="line">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <!--Row 4-->
+        <div class="line">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <!--Row 5-->
+        <div class="line">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <!--Row 6-->
+        <div class="line">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <!--Row 7-->
+        <div class="line">
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+        </div>
+        <!--Row 8-->
+        <div class="line">
+            <div class="white">&#9820;</div>
+            <div class="black">&#9822;</div>
+            <div class="white">&#9821;</div>
+            <div class="black">&#9819;</div>
+            <div class="white">&#9818;</div>
+            <div class="black">&#9821;</div>
+            <div class="white">&#9822;</div>
+            <div class="black">&#9820;</div>
+        </div>
+    </div>
+</body>
+
+</html>

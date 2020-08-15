@@ -1,0 +1,130 @@
+
+---------------------------------------FUNCTIONS FUNDAMENTALS------------------------------------------------------------------------------
+
+
+
+1-const str= "Subham Singh";
+o/p-undefined
+
+2-const myNumber=1000;
+o/p-undefined
+
+3-const myFloat=3.14153;
+o/p-undefined
+
+4-myFloat=4.12;
+o/p-VM206:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:8
+(anonymous) @ VM206:1
+
+5-myNumber
+o/p-1000
+
+6-myFloat
+o/p-3.14153
+
+7-str
+o/p-"Subham Singh"
+
+
+
+8-const str1="CDAC Mumbai";
+o/p-undefined
+
+9-str.toLowerCase();
+o/p-"subham singh"
+
+10-str.toLowerCase();
+o/p-"subham singh"
+
+11-str1.toUpperCase();
+o/p-"CDAC MUMBAI"
+
+12-str1.trim(); 
+o/p-"CDAC Mumbai"
+
+13-str1 + str ;
+o/p-"CDAC MumbaiSubham Singh"
+
+14-str1  +  str + " both are awesome";
+o/p-"CDAC MumbaiSubham Singh both are awesome"
+
+15-str1.substring(3);
+o/p-"C Mumbai"
+
+16-str1.substring(2);
+o/p-"AC Mumbai"
+
+17-username.split("");--->>for splitting (making spaces in between two words)
+
+
+18-1-function sum(n1, n2) {
+  return n1 + n2;
+}
+undefined
+
+sum(2,3)
+o/p-5
+
+
+19-sum(1,'hello')
+o/p-"1hello"     
+
+20-function example()
+{
+    console.log("1");
+    console.log("2");
+    console.log("3");
+    console.log("4");
+    console.log("5");
+    console.log("6");
+    console.log("7");
+    console.log("8");
+    console.log("9");
+o/p->1                            
+     2
+     3
+     4
+     5
+     6
+     7
+     8 
+     9
+
+21-function example1()
+{
+    console.log("1");
+    console.log("2");
+
+    setTimeout(()=> {
+        console.log("3. I am callback")
+    },5000);
+
+    console.log("4");
+    console.log("5");
+}
+undefined
+
+o/p->1
+     2
+     4
+     5
+
+     3. I am callback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
