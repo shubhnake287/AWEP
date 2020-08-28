@@ -1,0 +1,194 @@
+1) main
+
+
+const Promise = require("bluebird");
+const mysql = require("mysql");
+
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+const DBC = require("./1.js");
+
+let readall = async () => {
+    try {
+        const Connection = mysql.createConnection(DBC.DBC);
+
+        await Connection.connectAsync();
+        console.log("connected");
+
+        let sql = " select * from employee WHERE  Employee_Firstname = 'nilesh'";
+        let result = await Connection.queryAsync(sql);
+
+        await Connection.endAsync();
+        console.log(result);
+    } catch (err) {
+        console.log("exception handale");
+    }
+
+};
+
+readall();
+==================================================================== 
+===>  1.js
+
+
+const DBC =
+{
+    host: 'localhost',
+    user: 'root',
+    password: 'sharingan@111',
+    database: 'practice'
+
+}
+
+
+module.exports = { DBC };
+
+const lastpage = require("./5.js");
+lastpage.reasusallll(
+
+    "shubhangi",
+    "101",
+    "delh",
+    "11765"
+
+);
+
+===========================================================================
+====>2.js
+
+
+const Promise = require("bluebird");
+const mysql = require("mysql");
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+let DBD = require("./1.js");
+reasusall = async () => {
+
+    const Connection = mysql.createConnection(DBD.DBC);
+
+    await Connection.connectAsync();
+    console.log("connected");
+
+    let sql = "select * from students WHERE  name=? AND adress=?;";
+    let result = Connection.queryAsync(sql, ["shubh", "mumbai"]);
+
+    await Connection.endAsync();
+
+    console.log(result);
+
+
+};
+
+
+reasusall();
+
+======================================================================
+
+3.js==>
+
+
+
+const Promise = require("bluebird");
+const mysql = require("mysql");
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+let DBD = require("./1.js");
+let reasusall = async () => {
+
+    const Connection = mysql.createConnection(DBD.DBC);
+
+    await Connection.connectAsync();
+    console.log("connected");
+
+    let sql = "INSERT INTO supplier (supplierID ,supplier_firstname,supplier_lastname,supplied_items,supplied_Quantity) VALUES (?,?,?,?,?)";
+    let result = Connection.queryAsync(sql, ["S005", "RA", "G", "R", "10"]);
+
+    await Connection.endAsync();
+
+    console.log(result);
+
+
+};
+
+
+reasusall();
+===================================================================================
+
+4.js
+
+
+const Promise = require("bluebird");
+const mysql = require("mysql");
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+let DBD = require("./1.js");
+
+
+let reasusall = async () => {
+
+    const Connection = mysql.createConnection(DBD.DBC);
+
+    await Connection.connectAsync();
+    console.log("connected");
+
+    let sql = "INSERT INTO students ( name,salary,adress,num) VALUES (?,?,?,?)";
+    let result = Connection.queryAsync(sql, ['shubha', 10, 'mumbaiee', 987651]);
+
+    await Connection.endAsync();
+
+    console.log(result);
+
+
+};
+
+
+reasusall();
+
+==========================================================================
+
+5.js
+
+
+const Promise = require("bluebird");
+const mysql = require("mysql");
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+let DBD = require("./1.js");
+
+
+let reasusallll = async (user) => {
+
+    const Connection = mysql.createConnection(DBD.DBC);
+
+    await Connection.connectAsync();
+    console.log("connected");
+
+    let sql = "INSERT INTO students ( name,salary,adress,num) VALUES (?,?,?,?)";
+    let result = Connection.queryAsync(sql, [
+        user.name,
+        user.salary,
+        user.adress,
+        user.num
+    ]);
+
+    await Connection.endAsync();
+
+    console.log(result);
+
+
+};
+
+
+module.exports = { reasusallll };
+==============================================================
+
