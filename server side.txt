@@ -1,0 +1,76 @@
+main=>
+
+
+const express = require("express");
+const readall = require("./mainserver");
+const cors = require("cors");
+//const { try } = require("bluebird");
+
+const app = express();
+app.use(cors());
+
+app.get("/", async (req, res) => {
+    try {
+        const input = req.query;
+
+
+        await readall.readall(input);//non blocking assyncronacs methodes;;
+
+
+        res.json({ messange: "sucesss" });
+    } catch (err) {
+        res.json({ messange: "Failure" });
+
+    };
+
+
+
+});
+
+
+app.listen(3000);
+
+=================================================================================
+=================================================================================
+const Promise = require("bluebird");
+const express = require("express");
+const mysql = require("mysql");
+const DBD = require("./3dbt.js");
+
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+Promise.promisifyAll(require("mysql/lib/Pool").prototype);
+
+let readall = async (input) => {
+    const Connection = mysql.createConnection(DBD.DBC);
+
+    await Connection.connectAsync();
+
+    let sql = "insert into students (name,salary,adress,num) values(?,?,?,?)";
+    let result = Connection.queryAsync(sql,
+        [input.name,
+        input.salary,
+        input.adress,
+        input.num]);
+
+    await Connection.endAsync();
+    return result;
+
+};
+
+module.exports = { readall };
+
+=============================================================
+=============================================================
+const DBC =
+{
+    host: 'localhost',
+    user: 'root',
+    password: 'sharingan@111',
+    database: 'practice'
+
+}
+
+
+module.exports = { DBC };
+
+========================================================================

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+
+<body>
+
+    <div> name <input type="text" id="name" style="margin-top: 4px;"> </div>
+    <div> salary<input type="text" id="salary" style="margin-top: 4px;"> </div>
+    <div> adress <input type="text" id="adress" style="margin-top: 4px;"> </div>
+    <div> num <input type="text" id="num" style="margin-top: 4px;"> </div>
+
+    <div><button onclick="signup()">sighup</button></div>
+    <div><button onclick="clickpop()">clickpos</button></div>
+
+</body>
+
+</html>
+
+======================================================================
+======================================================================
+
+let signup = () => {
+
+
+    const name = document.querySelector("#name").value;
+    const salary = document.querySelector("#salary").value;
+    const adress = document.querySelector("#adress").value;
+    const num = document.querySelector("#num").value;
+
+
+    let url = `http://localhost:3000/?name=${name}&salary=${salary}&adress=${adress}&num=${num}`;
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+
+    xhr.onload = () => {
+        const res = xhr.responseText;
+        console.log(res);
+
+        // await fetch(url);/////////2 nd way
+
+        document.querySelector("#name").value = "";
+        document.querySelector("#salary").value = "";
+        document.querySelector("#adress").value = "";
+        document.querySelector("#num").value = "";
+
+    };
+
+    xhr.send();
+};
+
+
+
+
+let clickpop = () => {
+    const name = document.querySelector("#name").value;
+    const salary = document.querySelector("#salary").value;
+    const adress = document.querySelector("#adress").value;
+    const num = document.querySelector("#num").value;
+
+    let url = `http://localhost:3000/?name=${name}&salary=${salary}&adress=${adress}&num=${num}`;
+
+    await fetch(url);
+
+
+    document.querySelector("#name").value = "";
+    document.querySelector("#salary").value = "";
+    document.querySelector("#adress").value = "";
+    document.querySelector("#num").value = "";
+
+
+};
+
+
+=======================================================================
+=======================================================================
+
