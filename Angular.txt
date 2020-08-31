@@ -1,0 +1,72 @@
+app.component.html
+
+
+<div>
+    <div ng *ngFor="let item of list">{{title}}</div>
+
+</div>
+
+<button (click)="add()">Add</button>
+<button (click)="remove()">remove</button>
+
+
+
+
+<div>
+    <h1>my project</h1>
+    <div ng *ngFor="let item of plstlist">{{item }}</div>
+</div>
+
+<div>{{mypost}}</div>
+<button (click)="increment()">like{{counter}}</button>
+
+<button (click)="justcomment()">comment here</button>
+<div>
+    <div *ngFor="let item of  commentlist">{{ item}}</div>
+</div>
+
+
+
+
+===============================================================================
+app.component .ts
+
+import { Component } from '@angular/core';
+import { compileComponentFromMetadata } from '@angular/compiler';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = "shubham";
+  list = [1, 2, 3, 4, 5];
+  plstlist = ["shubham", "jaiwant", "neha", "shruti", "sweety"];
+
+  add() {
+    console.log(" heyy");
+    this.plstlist.push("sweta!!!");
+  }
+
+  remove() {
+    this.plstlist.pop();
+  }
+
+  mypost = "heloo everyone";
+  counter = 100;
+  comment = "hhhhhhhhhhhhhhhhhhhhh";
+  commentlist = [];
+
+  increment() {
+    this.counter += 1
+
+  }
+
+  justcomment() {
+    this.commentlist.push("hello angularr!!!!!!!!!!!!");
+  };
+
+}
+==============================================================================
+===============================================================================
